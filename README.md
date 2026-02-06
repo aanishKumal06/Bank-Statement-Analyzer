@@ -44,6 +44,7 @@ streamlit run app.py
 ![Sample 1](screenshots/sample1.png)
 ![Sample 2](screenshots/sample2.png)
 ![Sample 3](screenshots/sample3.png)
+![Sample 4](screenshots/sample4.png)
 
 
 ## Note

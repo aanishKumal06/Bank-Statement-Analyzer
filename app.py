@@ -49,7 +49,7 @@ with col2:
 
 # --- File Handling ---
 if uploaded_pdf:
-    with st.spinner("🔍 Extracting transactions..."):
+    with st.spinner("Extracting transactions..."):
         try:
             df, holder, start, end = extract_transactions_from_pdf(uploaded_pdf)
 
@@ -62,7 +62,7 @@ if uploaded_pdf:
             st.session_state.start = start
             st.session_state.end = end
 
-            st.success("✅ Transactions extracted successfully! Redirecting...")
+            st.success("Transactions extracted successfully! Redirecting...")
             st.switch_page("pages/analyze.py")
 
         except Exception as e:
@@ -70,8 +70,8 @@ if uploaded_pdf:
             for key in ["df", "holder", "start", "end"]:
                 st.session_state.pop(key, None)
 
-            st.error(f"❌ Failed to process the PDF. Please ensure it's a valid Global IME bank statement.\n\n**Error:** {str(e)}")
+            st.error(f"Failed to process the PDF. Please ensure it's a valid Global IME bank statement.\n\n**Error:** {str(e)}")
 else:
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        st.info("📄 Please upload a bank statement PDF.")
+        st.info("Please upload a bank statement PDF.")
