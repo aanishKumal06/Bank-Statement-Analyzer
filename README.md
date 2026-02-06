@@ -10,6 +10,10 @@ A web-based application that analyzes Global IME Bank statements and provides vi
 - Date-range filtering
 - Downloadable transaction reports
 
+## Live Demo
+
+[Use the app here](https://anish-bank-statement-analyzer.streamlit.app)
+
 ## Tech Stack
 
 - Python
@@ -50,3 +54,4 @@ streamlit run app.py
 
 
 This application currently supports only Global IME Bank statements in PDF format.
+
